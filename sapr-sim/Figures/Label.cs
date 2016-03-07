@@ -90,9 +90,12 @@ namespace sapr_sim.Figures
         {
             ft = new FormattedText(text,
                 CultureInfo.CurrentCulture, FlowDirection.LeftToRight,
-                new Typeface("Calibri"), 12, Brushes.Black);
+                new Typeface("Arial"), 12, Brushes.Black);
             label = this;
             this.owner = owner;
+            ft.MaxTextHeight = 100;
+            ft.MaxLineCount = 2;
+            ft.MaxTextWidth = 70;
         }
     }
 }
