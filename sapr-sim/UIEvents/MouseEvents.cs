@@ -123,6 +123,33 @@ namespace sapr_sim
         {
             Mouse.Capture(null);
             captured = false;
+            //Сюда необходимо вставить персчет размер канваса для увелечения скрола или наоборот
+            //ModelChanged();
+            //currentCanvas.UpdateLayout();
+           
+            ScrollableCanvas scCanvas = currentCanvas as ScrollableCanvas;
+            
+            double bottomMost = 0d;
+            double rightMost = 0d;
+
+            foreach (object obj in scCanvas.Children)
+            {
+                FrameworkElement child = obj as FrameworkElement;
+
+                if (child != null)
+                {
+                    child.Measure(new Size(10, 10));
+                    bottomMost = Math.Max(bottomMost, VisualTreeHelper.GetOffset(child).Y + child.DesiredSize.Height);
+                    rightMost = Math.Max(rightMost, VisualTreeHelper.GetOffset(child).X + child.DesiredSize.Width);
+                }
+            }
+            
+            //currentCanvas.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity)); 
+           currentCanvas.RenderSize = new Size(rightMost, bottomMost);
+           scCanvas.RenderSize = new Size(rightMost, bottomMost);
+           ModelChanged();
+           currentCanvas.UpdateLayout();
+           
         }
 
         private void processCoordinatesHandler(UIEntity ent, double x, double y)

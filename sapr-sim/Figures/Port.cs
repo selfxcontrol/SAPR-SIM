@@ -116,7 +116,7 @@ namespace sapr_sim.Figures
         private void init(UIEntity owner)
         {
             Fill = Brushes.Red;
-            bound = new Rect(new Size(7.5, 7.5));
+            bound = new Rect(new Size(7.5,7.5));
             this.owner = owner;
             this.LayoutUpdated += UIEntity_LayoutUpdated;
         }

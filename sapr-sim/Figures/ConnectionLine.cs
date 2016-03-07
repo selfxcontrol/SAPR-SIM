@@ -115,7 +115,7 @@ namespace sapr_sim.Figures
 
         private class LineDefinition
         {
-            private int thickness = 8;
+            private int thickness = 3;
             private Brush brush = Brushes.Black;
 
             public LineDefinition(UIEntity from, UIEntity to)
