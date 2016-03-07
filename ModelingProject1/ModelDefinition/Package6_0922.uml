@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="897df9d4-7b90-483a-b652-131afac5117f"
+  name="Utils"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f9eccddc-615e-4c35-887d-b8ba8d36987e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dsapr_sim.Utils"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="13ac3299-6216-4255-b11c-c9eea669e5e8"
+        name="ResourceType"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ebb481b6-4229-48b6-8857-9cff64232a2f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Utils Type%3DResourceType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="be58017f-92ed-4b73-b3c6-f950236484d8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9adf81b2-b156-4e5d-90d6-aa16731d8f15">
+                <propertyInstance
+                  Id="971a25d6-91b2-45be-8fa8-47a7d16ce4eb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3227eb1b-3098-4fc9-aa76-ca0e26946458">
+                <propertyInstance
+                  Id="2a968126-81b1-4f65-8b3f-fd34e4c8f38b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="96464be1-a91e-4f7a-a8bd-fa59ec4a3d8a">
+                <propertyInstance
+                  Id="20fa77e8-9cc5-477d-81d9-28d6c3f882e0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="68a9503e-c559-4e80-8945-aaf694a54b71">
+                <propertyInstance
+                  Id="e6f54fe5-bd63-4e76-9276-93fe037f48ad"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab6e2ed5-44dc-444e-962c-26f58a2b2337">
+                <propertyInstance
+                  Id="18128fa5-0009-4d38-830a-cb18114aea7b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ff30c2a6-ae8e-4bb9-a8f7-97e99dff5cf9"
+        name="TimeMeasure"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="22335bd2-09ca-4687-97b6-088ae9498d08"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Utils Type%3DTimeMeasure"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e3046fa1-95ab-4d85-88aa-f175d6930c2a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e3474b0-68a3-4655-b1da-788c40e75978">
+                <propertyInstance
+                  Id="1ef61105-f9ef-4bb0-b867-2afb40db73be"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2727dda9-7575-4561-a87f-4df9c4ab8256">
+                <propertyInstance
+                  Id="fdd4d63e-f831-4ca1-8661-92be85fca354"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7d16cf7-e4c4-49f9-a287-65d42c29419c">
+                <propertyInstance
+                  Id="73da78d3-39e2-4dd4-adc5-68ec8a33bc90"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b98b236e-8a86-4cc3-9cd6-dbf8485d7255">
+                <propertyInstance
+                  Id="0a0b428d-e784-412c-9837-9e05d25d5d77"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="610527bf-828b-48f8-a362-14643cf61859">
+                <propertyInstance
+                  Id="dda0d91f-8a62-42af-988c-013227415977"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="de0c5f6e-0f24-48bb-b50b-89708192ea7d"
+        name="FileService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="36914be0-9690-4906-be1a-04a609afe3c8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Utils Type%3DFileService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="af203a9b-9b57-4233-bf53-e35c70bd7607"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5024d326-25d4-4835-8f37-9f566f9035f4">
+                <propertyInstance
+                  Id="65e39f5d-88cc-47d6-8766-dba7788964d0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d60593c7-be82-40ab-8164-b392751c88c5">
+                <propertyInstance
+                  Id="70e2d665-2fcc-4fe1-92eb-d29715b8e877"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c48b5513-a2d4-499c-b0e4-6ddec19090a2">
+                <propertyInstance
+                  Id="6130d38a-425a-4f0c-b4fc-c4fe6b8b00a4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd55483c-8da9-4101-bc3f-ec9d81be45d0">
+                <propertyInstance
+                  Id="ca6c7b4b-7c1a-4dbb-a197-a1b24aca59f2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="67963184-ead0-43d4-8a93-82f2ba2e5a2d">
+                <propertyInstance
+                  Id="e2ffe774-2791-4a13-a2d1-c3205b386326"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

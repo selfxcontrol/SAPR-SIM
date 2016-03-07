@@ -1,0 +1,1628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2a976dad-4c09-4fed-8e06-e77800f62da7"
+  name="EntityTransformator"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="96ad76b3-9171-4e58-ab6d-6ffa06764ba6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DEntityTransformator"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9e33c570-6f06-4d16-b920-f984ea2d8091"
+        name="TransformerService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3953e893-9a02-4916-9718-41693ce4c7e7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3f6e7eee-3e08-4ccf-aa3a-cfc3fd830737"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4d1a239-3a05-41e8-bda1-f02003cdc830">
+                <propertyInstance
+                  Id="c96b6800-e6dc-4311-b1b3-a3128d1a2a4b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="518f52e7-2e2d-498b-be27-c859eb53f72a">
+                <propertyInstance
+                  Id="947c7880-e77f-4bb1-8b52-26355377b710"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="29803b1f-5738-4fd9-8fd7-310d07777f5c">
+                <propertyInstance
+                  Id="b942f819-89ed-48a4-97db-0b2ba264f6c3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bdcb3091-a765-4812-876a-5451f40b7a3d">
+                <propertyInstance
+                  Id="44047bb5-4523-4511-b057-e0d193906e47"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1749b852-fcdb-4457-87dc-00f651fdeed7">
+                <propertyInstance
+                  Id="60d58f0f-3af7-4425-b936-b327f5fd2393"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="19f35b1d-0de4-4b39-bb2e-9f33202cd33f"
+            name="map"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="56129bed-6c0d-44ca-aa09-cfd975797f52"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3Dmap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b4eae45-a480-4a08-84e8-1c01d4201090"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c14fb9c-c649-4970-8079-418cbfcea30f">
+                    <propertyInstance
+                      Id="322eedf0-a43e-4f8f-88c2-cd8a2bc77ed2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f523608f-166d-4ccc-b1c7-5a02427239cc">
+                    <propertyInstance
+                      Id="dd6539c2-b9bf-4da4-8bc5-5500921c4355"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="972ee5d2-6fc3-4b1f-a569-1e72a3dc6c2a">
+                    <propertyInstance
+                      Id="a4665129-37d7-4774-bf66-8d79f374884d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a2cefbd-017a-408c-a8af-a1dfcfe66243">
+                    <propertyInstance
+                      Id="bb900730-d1fc-4c13-b069-2d87fa06aaf2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9fb0502-9139-4d47-b889-5bffd04604cc">
+                    <propertyInstance
+                      Id="ce3e2915-4c80-4f09-9861-ed205f16deb4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6aa7f387-0be9-43f0-ac53-9dd07b4908e5"
+                LastKnownName="Dictionary&lt;UIEntity‎, Entity‎&gt;"
+                LastKnownLocation="Package5_0921.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="846e5fd1-6062-424b-a94a-f04ee9a9cd93"
+            name="resMap"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4f5be0d0-bc48-4877-a3c6-fa0ca7c06633"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3DresMap"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="570362cf-6f84-44f7-80c8-956a0070db3e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="726851ad-2051-4fe6-bea3-a3a1e0c7e73e">
+                    <propertyInstance
+                      Id="6b747361-f611-44c7-88bb-f213492e448a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a778738c-955a-417d-b49d-e71354dcc474">
+                    <propertyInstance
+                      Id="6ec83ccb-5ceb-40a0-9e69-0afef18d92a3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69df1980-81b0-4554-868a-48341db036ea">
+                    <propertyInstance
+                      Id="b948ebc9-5593-4ac9-a82b-768aed233d88"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9df2d91d-b0f2-4e10-9b09-34b38ac88c71">
+                    <propertyInstance
+                      Id="67b9781a-b529-4c21-b03f-5ccbd44b4d3d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35d788cf-7a73-42db-9b1c-c5d883c2b1cf">
+                    <propertyInstance
+                      Id="80061149-4d16-4f7e-bb0e-cdea856b7b9b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="01e87aca-651e-4712-8f33-30d9f77e5187"
+                LastKnownName="Dictionary&lt;UIEntity‎, Resource‎&gt;"
+                LastKnownLocation="Package5_0921.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60d4ebf4-814c-469c-92c6-daa91ce80e0d"
+            name="resources"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ee640a32-d468-46c6-853e-c0154a7c91d0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3Dresources"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2790100c-864d-4062-8f9d-c5c00289febc"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36f5e5fe-c2dc-49c6-99bd-a45fc696daea">
+                    <propertyInstance
+                      Id="906cc490-6631-4ba2-a85f-b23ecdec19f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34ce2603-a568-4f69-bf2b-83844d59e6df">
+                    <propertyInstance
+                      Id="55aac736-e1b9-42b4-8fa5-81e486795a92"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a496a04-2ce6-441c-92eb-0940a5f65cc4">
+                    <propertyInstance
+                      Id="546a776c-7c57-4d20-af8d-1b00c77ad338"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff13bb0a-8786-4a4d-93d2-2b2880f1447e">
+                    <propertyInstance
+                      Id="54229a52-8a8a-407f-a16d-dc356c01bf34"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cc22ee0-b85a-4740-a249-4088a71f5985">
+                    <propertyInstance
+                      Id="7c96ee97-a8de-488b-93a8-650e96d400ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="89696d48-c8cb-4668-9f56-4bf6e5c584a4"
+                LastKnownName="List&lt;Resource‎&gt;"
+                LastKnownLocation="Package5_0921.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c6cbe2de-09fd-46fe-b3c3-68b07a2f2c3f"
+            name="transform"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="397f84db-2d88-4652-b6eb-6bdc21fd4543"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e468bdf4-b5e1-4f73-ad57-2e7043fa7a48"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7975b2d-d27c-4393-860b-c10f594f3334">
+                    <propertyInstance
+                      Id="11aeeae3-4a5d-4bd0-99e7-d6af89d471ed"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d74b59d-88ef-4f3b-ab10-d6135446e45a">
+                    <propertyInstance
+                      Id="1c9655d2-e317-473c-8598-14bc0df3a431"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e62a0e1-2b1a-4083-b719-07fc5b53847d">
+                    <propertyInstance
+                      Id="45369e13-445f-4836-8c48-2a3f7d05505e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43ca9fb1-cdbb-48c8-95aa-d48102ac5866">
+                    <propertyInstance
+                      Id="bc9d8664-bf9f-4905-9d72-79a2531c86cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="728795b3-18f0-4d55-893f-f68dbf8547f3">
+                    <propertyInstance
+                      Id="9526807e-ccc8-41c5-a4ed-55b368e5ee46"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e4fd7ec-d2ec-43a3-a211-6738868a40f3">
+                    <propertyInstance
+                      Id="e0bb20a0-ed52-435b-90d8-0b7668d80ec7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee18c468-a1e2-4639-9aa1-e01b40c274a7"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="79c82ff1-b7e6-4abd-8ba2-121835534c05"
+                      LastKnownName="List&lt;Entity‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f7569eb9-98e0-43c6-ad08-e11071cb3cee"
+                  name="elements"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1e3369b6-a861-4320-9d83-7748e0d56480"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)]) ParameterIdentifier%3Delements"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eef4e5e0-8246-4a23-a9d7-53df651dbc7d"
+                      LastKnownName="UIElementCollection"
+                      LastKnownLocation="Package2_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="40d2f8a7-cc98-451d-a425-5e0f138eccc1"
+            name="transform"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4b44cc70-3b9e-4c9f-9df2-5115cacb6f5f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DIdentifable)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f1efe89-f35a-4f2b-b912-d66857229b81"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="366cf29d-6e7e-4577-b81a-3af6af851a12">
+                    <propertyInstance
+                      Id="2bd41c57-4446-4927-afce-8d0b6579296c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d82daaee-8a40-409a-9f8d-e30ba0693226">
+                    <propertyInstance
+                      Id="43c314fd-c648-4e18-b176-6ec3b22287f8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dafa6c1-ee33-4341-b119-6de8fa40e01b">
+                    <propertyInstance
+                      Id="80719d7b-e270-417a-8d41-12ddf9f83fe2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbe352db-b7ff-4e0d-98b9-d7864409749a">
+                    <propertyInstance
+                      Id="ecc3177b-ac20-4fea-889d-eb1490831600"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b46c14ff-e18d-4639-bf71-b252df9463d2">
+                    <propertyInstance
+                      Id="4356d095-9865-4768-9afd-61dd0245bff3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a07d6d7b-9aed-4451-bcb8-39409dfa8aa2">
+                    <propertyInstance
+                      Id="4fade7d5-0260-4d7e-a419-eb1bdd951098"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ead5973-66f3-4dad-b527-e362581cb479"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d04a290b-f096-4277-9950-b66b2fe589b6"
+                      LastKnownName="List&lt;UIEntity‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59519cd5-8cc0-4c31-ab6b-542d93394a3a"
+                  name="elements"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="477fd65a-d917-436a-9724-eca7bc02cc34"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DIdentifable)]))]) ParameterIdentifier%3Delements"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9e9cd8a9-6b53-4d24-aac4-9c5434a0f379"
+                      LastKnownName="List&lt;Identifable‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="30deb90b-dec4-445f-8598-d221f0003c11"
+            name="getResources"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d1421d9d-f0c4-4026-aa2b-2097681a693b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3DgetResources"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ff2045e1-fb77-46c7-b4c5-26cd7b112be2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="384b5c68-f049-4c4b-9ae8-f6d4f9ca07b9">
+                    <propertyInstance
+                      Id="49c5d384-faa2-4d8d-83b4-3b4381f756a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17e3a742-17aa-4806-86db-b434bbf069b9">
+                    <propertyInstance
+                      Id="ba58edac-80bb-4063-a922-b0e1429cef9c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="003b236f-5bec-4891-b755-6137969bed27">
+                    <propertyInstance
+                      Id="a219558e-33cb-447d-b8a0-50ae965332f0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="313ad84c-50a2-434f-be90-c3c1fb55ed3e">
+                    <propertyInstance
+                      Id="2fab3675-ebbf-4fe1-97df-8b504fd0efb0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd365c3d-e1b8-4683-b649-a9ed3e951d67">
+                    <propertyInstance
+                      Id="f1f7d071-6ac6-42f8-8511-0475f40c6ec8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ff51325-f95a-4836-bd35-4189a3fafb6f">
+                    <propertyInstance
+                      Id="2af44599-3b6f-438b-a7ce-9e8a87e4c0c8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c8ab25e-ddd1-4bab-a896-26b44902c746"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="89696d48-c8cb-4668-9f56-4bf6e5c584a4"
+                      LastKnownName="List&lt;Resource‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5b6602d5-13c2-4194-bfe0-e8442893bb19"
+            name="processConnectionLine"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="82a6f402-0b91-4152-b280-7d5a8b8f2d1f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessConnectionLine OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f14ec31b-0aa1-43e6-855b-ae1e2c619043"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ee857e4-7283-4439-897b-4e171bb59362">
+                    <propertyInstance
+                      Id="c2acfc92-6078-4c69-a7c0-f0a5505641c7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f409759d-facb-4ff2-b593-3c60ba51bc35">
+                    <propertyInstance
+                      Id="d80966ae-ab54-438e-bde9-752ec96b11ac"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cabf0348-27bb-49f7-9bda-576344317cf9">
+                    <propertyInstance
+                      Id="5cfad3a6-14f0-4117-904e-f856605c5490"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3115bad-408d-4f95-b158-feec20c753e7">
+                    <propertyInstance
+                      Id="ce7dc302-ae56-4a69-a300-48da31533731"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1412b2e-de62-489c-9ee3-962033022637">
+                    <propertyInstance
+                      Id="1f6caa38-0a7d-44e8-ac94-fd34a62eb7df"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf5f9a6e-4b8c-48aa-8b07-51f191f547e8">
+                    <propertyInstance
+                      Id="5a796ec3-8934-4796-9fe4-be46c6c01800"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6b2ba959-369b-48aa-a59f-3698a9308d32"
+                  name="c"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="70a81e68-1522-4075-ad45-947c14709c58"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessConnectionLine OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cdb0a15f-8699-4e31-909e-0a0e6b4509f4"
+                      LastKnownName="ConnectionLine"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f88668d-eb74-4f51-9a44-9a4f58d911f3"
+                  name="skipSubprocess"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cbdd1768-20c1-48a1-8c00-59910766e01a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessConnectionLine OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DskipSubprocess"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2b95d3b4-6ca2-42c8-aa45-c1ec54885dea"
+            name="processResource"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="28ed3425-b2aa-4ca3-951a-4f57103d421a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessResource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bcbfc34c-cceb-4302-a88d-5b68ef9c1e4c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1deca19d-eb2c-41b0-a51a-9f3f9ac8350e">
+                    <propertyInstance
+                      Id="ab3c179f-1639-411e-906a-36493ed9c9b4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffb8e7cf-a119-4a8a-8ed7-8f804e3b1cad">
+                    <propertyInstance
+                      Id="ec5ea09b-f1ce-4991-a59e-d6cb9c8cfc0f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b00498aa-3f56-4afe-aa83-07d531b5233c">
+                    <propertyInstance
+                      Id="e9f3a863-84b9-4f76-b628-f89220c18a5e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2924efe4-3ea1-4939-8cc6-185a750c7e59">
+                    <propertyInstance
+                      Id="b6162bbf-a4f4-467f-9a86-7da1f5884468"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e68c51e4-f228-473e-8c34-50a923a2c95c">
+                    <propertyInstance
+                      Id="d8a4f9c7-9e94-4194-aa4e-a5ddcf37bd54"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2367a2a8-eed2-4fa8-a1fb-9219404e3720">
+                    <propertyInstance
+                      Id="4c9bfa25-8683-40a3-953a-e59bacfee9b3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b174b39-81f9-41f8-87c5-3734205300cd"
+                  name="elements"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="79309fc2-9fd9-4bc0-8fec-904e0bd0036e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessResource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)]) ParameterIdentifier%3Delements"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eef4e5e0-8246-4a23-a9d7-53df651dbc7d"
+                      LastKnownName="UIElementCollection"
+                      LastKnownLocation="Package2_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ae94171-1c2b-4172-8da5-50e9dc5f5f2c"
+                  name="resource"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3bc26e15-d8b3-4fae-8330-9a05b52b8315"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessResource OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)]) ParameterIdentifier%3Dresource"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e28b0433-a9b3-407a-a824-154fd0a8f3e7"
+                      LastKnownName="Resource"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4dad97ce-2490-4de4-8bf8-4f5058733775"
+            name="connectResourcesBetweenThemselves"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9761b6db-0867-4a5a-805c-cbde41ecce66"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DconnectResourcesBetweenThemselves OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d0f6ff8-1b6d-436f-9a94-62ac30322970"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9384d15a-41d6-4b6b-8cdc-462b9add97aa">
+                    <propertyInstance
+                      Id="f5d93f4f-5dea-40ba-9d0d-93eb1a75aa2b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98b8acbf-d9c0-4a8d-ad88-6d8e0c06a408">
+                    <propertyInstance
+                      Id="86c4f606-8bf0-48de-8dd2-a25824fa2a63"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec96aa6b-9fc0-4baa-adac-c1d4fa716eff">
+                    <propertyInstance
+                      Id="d6a2863e-e904-4dd1-99a2-f2b145a3d8fa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b59b66cc-56b1-486e-900a-bef095935351">
+                    <propertyInstance
+                      Id="4f61a392-14b1-46bf-84d6-a4bba6a5648c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90274c13-199d-4620-a6ec-355ec950f912">
+                    <propertyInstance
+                      Id="8703a50d-88a5-4907-9d42-0102fbaaa38a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adb99081-9c57-4230-96eb-74ed4397fa3d">
+                    <propertyInstance
+                      Id="8956e531-9f3a-4c8c-ae9e-c276fc6195cd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0d8a9f9e-ee4c-418e-87d9-d8cf3420198c"
+                  name="elements"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ecf18a23-8362-4727-a45d-ddf2cae8b37d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DconnectResourcesBetweenThemselves OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)]) ParameterIdentifier%3Delements"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eef4e5e0-8246-4a23-a9d7-53df651dbc7d"
+                      LastKnownName="UIElementCollection"
+                      LastKnownLocation="Package2_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67e9f8d9-99ae-4bac-8900-ff43a95cb531"
+                  name="resource"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e0cdb288-92c5-49b2-9d67-4763f6464f52"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DconnectResourcesBetweenThemselves OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DResource)]) ParameterIdentifier%3Dresource"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="e28b0433-a9b3-407a-a824-154fd0a8f3e7"
+                      LastKnownName="Resource"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="865ad4d0-e119-43b1-98af-9028607d4517"
+            name="processSubprocess"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="360eda92-cfef-411d-96de-fa85bad4c95a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessSubprocess OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ea70779f-52c7-41de-a56a-fea4826917be"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf1a9ba6-41b8-405d-a22e-5f34c890b55a">
+                    <propertyInstance
+                      Id="3c44daa9-198d-484b-ba27-528928efe495"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c0af721-6cdd-4ee4-9322-0cc12d85569c">
+                    <propertyInstance
+                      Id="6af0f966-85e9-4832-87c8-42d5e1b43a2a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0cf76b95-44ae-4657-9970-bb493af3e181">
+                    <propertyInstance
+                      Id="e1fbb747-f04f-4163-9d0d-9a420a363ec8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e227434f-31be-4987-be04-3869365db08d">
+                    <propertyInstance
+                      Id="503e1bd9-5702-44ac-bb31-1719b44e2e80"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e26da7fc-3584-4f80-86c2-cc333786a1f6">
+                    <propertyInstance
+                      Id="2af6469c-2d33-4096-a2fd-6cbce8e80081"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2093b6ae-a16d-4b0e-8f0a-d13eb7980d93">
+                    <propertyInstance
+                      Id="239e9110-17da-4114-af68-64a765727c0e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="03e32a0a-287b-4907-aa40-898e51c2f0fc"
+                  name="elements"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7a6200c6-8194-46dc-a032-a10c3e67a149"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DprocessSubprocess OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationFramework.dll&quot; Namespace%3DSystem.Windows.Controls Type%3DUIElementCollection)]) ParameterIdentifier%3Delements"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="eef4e5e0-8246-4a23-a9d7-53df651dbc7d"
+                      LastKnownName="UIElementCollection"
+                      LastKnownLocation="Package2_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f565b961-f82e-4d90-b629-a7921b61fe7c"
+            name="addLinkForRealEntities"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fcf47b86-1bdb-4773-baa8-9485995bd934"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddLinkForRealEntities OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bb094b62-adeb-4ccd-84ad-df876e30edf8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1889a1ff-a703-4ad8-a8f4-5763f1c365cd">
+                    <propertyInstance
+                      Id="79d38821-f6bd-41c2-ac47-a9ff68119ea7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72e16db3-f9a2-4540-b37c-68686b9693b2">
+                    <propertyInstance
+                      Id="4555eaf3-cf9c-4330-82f7-91091631c0c8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ced92c7-e4f7-4d60-98b9-b9684b4d54d9">
+                    <propertyInstance
+                      Id="d46fbf4b-02eb-431f-a543-86be10f9bb9f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19ea91c3-f0bc-425e-b16c-84409a8737af">
+                    <propertyInstance
+                      Id="4e2240d1-475a-4ee4-8ffc-853982f4e62c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e9dbf69-3e6a-4636-a89d-a2faada3449d">
+                    <propertyInstance
+                      Id="e19fefe8-3656-4c66-8b73-e2be83bae41b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bba44ad-c419-44bc-a061-880177cd4cbd">
+                    <propertyInstance
+                      Id="462a12dd-c63f-4702-ad8d-77bb811d7b72"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b392117c-ecb1-41ce-a88c-85b5734a479d"
+                  name="c"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="44bc8c8d-a0e5-4d52-b567-8eb08f1fbbcc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddLinkForRealEntities OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]) ParameterIdentifier%3Dc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cdb0a15f-8699-4e31-909e-0a0e6b4509f4"
+                      LastKnownName="ConnectionLine"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e046850-1ab8-40c8-b068-518739d2486d"
+                  name="realSrc"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7a2ccbe7-c0ac-4b9e-bcb5-395f521252e7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddLinkForRealEntities OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]) ParameterIdentifier%3DrealSrc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="17b1a65a-64f4-410a-8433-7dda16033299"
+                  name="realDest"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f7cbc763-3da8-4be3-80fd-375b86620750"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddLinkForRealEntities OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DConnectionLine)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]) ParameterIdentifier%3DrealDest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a2412968-2a16-4ee4-9d96-dd7ba3f47ae0"
+            name="addAdditionalRelations"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="81c602ee-4c1b-4bc7-be0f-bab87a395a8a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddAdditionalRelations OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DResource)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf2c69a0-f645-4cba-99bd-c5caca29f7eb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92542fb8-0dfa-4fcc-8f79-881b7fe0cd52">
+                    <propertyInstance
+                      Id="af09c58b-f11b-4998-a4ec-c3d83264e3f4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edff4bf5-092c-4272-b18f-405add60da62">
+                    <propertyInstance
+                      Id="4f1f69f0-abc6-4ef5-9e4f-1c0d384dd0c7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8340acd4-bd57-452f-853a-0f682953d0fc">
+                    <propertyInstance
+                      Id="dd8c1af7-75dd-4747-a337-c7a9e265a07a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afc2b7a7-5acf-4da8-b35e-9e278a0bcbab">
+                    <propertyInstance
+                      Id="2dfc5b6e-b6e5-44d4-8a0b-a9e20df23792"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8420922c-6bc0-455b-9bc1-c06d111a243c">
+                    <propertyInstance
+                      Id="af0e5367-7785-415d-82f4-bcb0a681d603"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a85758c0-e685-428a-bbb5-0851bcec58c2">
+                    <propertyInstance
+                      Id="372b44f5-e329-4530-838f-8890f1ae1f5d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="60805ebd-e631-4bcf-b2dd-847d0b6d6a95"
+                  name="src"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="45ae6e4c-cf41-41be-aedf-26686605e7cf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddAdditionalRelations OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DResource)]) ParameterIdentifier%3Dsrc"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="323daedb-ffd9-42ef-8d84-9b1f6961cb84"
+                  name="dst"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="041cdd9c-8390-46f8-a170-6fa89c82dc52"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D(Name%3DaddAdditionalRelations OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)%2C(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DResource)]) ParameterIdentifier%3Ddst"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="634eb3bf-93dc-4488-b5f7-e7f9dfe663a4"
+                      LastKnownName="Resource"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="70c675a9-39ff-4dd2-a50e-3cdcf6502ecb"
+            name="TransformerService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="61aee908-285f-4430-bf32-dca48c02eea7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="155ebf3c-d4ef-4c6a-a821-0afd2c2d4f05"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="397f74ac-70e4-4dd0-abc7-0c01d224f1cc">
+                    <propertyInstance
+                      Id="5613b0b6-3793-4a52-826e-3c88ece68839"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6e1ac3b-5785-49d1-9e22-9efbbc67ccdb">
+                    <propertyInstance
+                      Id="1e559b56-d87b-4022-91c7-6a8ea066d7d7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00317d51-f20d-414b-afb9-212719517915">
+                    <propertyInstance
+                      Id="96e3be56-f63f-4ccf-8d44-34595deb479b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a20ee6e-faa4-4e77-b67e-6dbc1876bb3a">
+                    <propertyInstance
+                      Id="3a40950e-50f3-464f-80f1-40a7236375aa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5208fc2d-64c0-42bb-b827-0d51e50b4d02">
+                    <propertyInstance
+                      Id="71153b48-a152-4901-aece-33a2a474be52"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7cb9b843-6fd6-408a-904d-8a9c7eba0c63">
+                    <propertyInstance
+                      Id="ab09f08d-90bf-4bd3-a087-f05f0a9574c3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5ef5d52a-1678-494e-a40b-1c6cc3d16a94"
+        name="TransformerFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8c1fe1da-47fe-4dcf-b7b4-b04e0d76876c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="743f3853-09e3-4d4e-8e2b-bbfecc432b2b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef303675-c0cb-4fbe-86f7-09fdf727ec3d">
+                <propertyInstance
+                  Id="71cf273d-72ec-4b59-8f08-51005991486a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8216dd2c-98ab-46a8-888a-7273c5b3ee3a">
+                <propertyInstance
+                  Id="c14450b9-2990-4534-80b4-a7e92d92d33b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e72c2249-d6fa-4c5e-ba88-2ef3b1c09c11">
+                <propertyInstance
+                  Id="774d5b3b-5e7d-4562-8c49-bc903fd6a60b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0700a40-7bf8-41cf-8e7e-04ec5850443b">
+                <propertyInstance
+                  Id="6ec3cbaa-4e92-4a45-b2f0-55f9ae0ff853"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4908ae78-a521-4f97-a583-0a62cac418ec">
+                <propertyInstance
+                  Id="e42576a9-df6b-44ea-ac24-34f13248d635"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c6c5878e-bcb5-46d7-9c36-7bcd5cd43430"
+            name="TransformerFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21f80bb2-71b6-4998-938e-e1e7fd34d648"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerFactory Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3075685a-42db-41ce-9e20-1f921cbd643a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c79471d-6190-4354-b6ea-2de9a3421130">
+                    <propertyInstance
+                      Id="d054a34e-8883-40e6-a3ed-7436f4b9a9cd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b521a24-75ba-4cf8-8be8-50d18f358091">
+                    <propertyInstance
+                      Id="1f425648-73b0-4b94-b074-98b4186b6959"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f136545-171e-4bb0-90df-74f1db61d742">
+                    <propertyInstance
+                      Id="90b9b429-942a-4a41-87e0-9893db6e39d9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e62db9a1-b2b4-4866-8093-f21216058ee4">
+                    <propertyInstance
+                      Id="73d8f233-68b4-4b7b-8f6a-7ab3f09dbfb6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d17566c-f869-4ddb-87fa-cef809163a03">
+                    <propertyInstance
+                      Id="303c7933-83f5-4847-8294-a36399b0d983"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a012ef3-8eba-4b35-953c-9ffb383c3791">
+                    <propertyInstance
+                      Id="043a4ae8-a183-428b-a801-9e60598049d5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="e1bb0b39-c058-41eb-a047-5317e6ef2d12"
+            name="getTransformer"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="46f2da80-9a41-4b2d-bfb7-76992d73a83c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerFactory Member%3D(Name%3DgetTransformer OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9dafa401-78e4-4a57-8d5d-fb1a96687910"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f80f87bf-a256-4aba-8b0a-56db10cdd561">
+                    <propertyInstance
+                      Id="de173f77-2614-44ce-ba3a-249b92792f6e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11c9691a-f568-4345-bfe5-5d48c48652ff">
+                    <propertyInstance
+                      Id="22b624a7-dd93-4a83-9700-90ab90b856dd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="121e2046-cfa7-443e-a325-2a6ceedc7e79">
+                    <propertyInstance
+                      Id="d5805f09-ef0e-4182-828a-e28e7d6ac343"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="513511ae-2281-40b3-b15b-14513aa8119a">
+                    <propertyInstance
+                      Id="e87fea93-4b94-463a-abc0-e8df1da5021c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dda9e760-606a-4c32-ab97-3a9b16a1f21e">
+                    <propertyInstance
+                      Id="47a3c6e0-7fe5-49bc-905f-48e982592ea6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01e1bac4-825e-468b-87ed-06ead59b9c55">
+                    <propertyInstance
+                      Id="8462bab1-9744-4762-8a7e-55a8e267e6f0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2dc620fc-4de7-40bb-b911-5daeaee64751"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="78caca42-6442-42d1-aabc-0ab8fce0c281"
+                      LastKnownName="Transformer"
+                      LastKnownLocation="Package_2131.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9a119c7-4c12-40d9-8101-7e55e4250acc"
+                  name="type"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="acaea9f9-06bc-4f79-9d1c-745a2e8b41c9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformerFactory Member%3D(Name%3DgetTransformer OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)]) ParameterIdentifier%3Dtype"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ab709b4e-c654-42e6-ae95-f05a605e9e09"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="78caca42-6442-42d1-aabc-0ab8fce0c281"
+        name="Transformer"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f00a39b4-82ef-4f37-ba5e-7419b09aaee9"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3b081219-cfaa-44d5-b424-c1f03a2cf110"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc6427d9-0e11-4309-911d-c5e680745ac6">
+                <propertyInstance
+                  Id="88ad7869-2114-468d-a498-badd8d9b316c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5160405-24ef-424f-9304-da608009f380">
+                <propertyInstance
+                  Id="d7a4e230-0ee9-4975-a4c7-4ae0f3fa26af"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ca857f6-4be7-45bd-9c4b-db54e35b0532">
+                <propertyInstance
+                  Id="4a38f190-6e62-43c8-b4d6-2d81d00c4b3c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1714dea8-19e4-4c3b-9f6e-ce8844798ac6">
+                <propertyInstance
+                  Id="3c2fe9bd-c702-44c9-ac21-31e71a462ccc"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="3355f1b7-c0bf-43bc-8c30-f35481a876cb"
+            name="transform"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="08d2eafb-d2db-4b97-99a1-ea05539ed07f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformer Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DUIEntity)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="456f1304-1db0-4d73-bd54-f958d94c105f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1bcdd98-41e2-46e3-a2f4-c444474ee31c">
+                    <propertyInstance
+                      Id="d43fa23d-8bcb-4627-bdcd-519af08e3e2b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53211f9b-7791-4782-bf1e-4ca769b53100">
+                    <propertyInstance
+                      Id="e3e2bb31-cf7d-4cfa-a63b-147813a6a24a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="535dc7c5-7bb6-4d63-a879-0025b5ea99a5">
+                    <propertyInstance
+                      Id="ad6c85da-775d-4d5a-88b7-3918ff75df3a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdcf7c25-4bbd-4630-b3b8-6a1592d01116">
+                    <propertyInstance
+                      Id="240b5248-5ab5-41bf-a82b-f33d1d0d2a42"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e267f389-1966-4aa4-a8c8-fa67506d48da">
+                    <propertyInstance
+                      Id="d983ac7b-a89c-44fb-a444-d78591062d74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="563fdcbf-340f-45c4-bf10-256bdae6b2a9">
+                    <propertyInstance
+                      Id="6de00b34-48b9-4d0d-9d95-b2e10dfb449c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18e200fe-09bd-4189-9178-5a639d67b51f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="761d79f8-8a50-4d47-8e21-db63364ef806"
+                  name="entity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a6fc74aa-37bb-4c6d-9a46-85ecd70c0e85"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3DEntityTransformator Type%3DTransformer Member%3D(Name%3Dtransform OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.Figures Type%3DUIEntity)]) ParameterIdentifier%3Dentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="286b1950-acd3-41ec-a9db-a9a48403a61b"
+                      LastKnownName="UIEntity"
+                      LastKnownLocation="Package_0923.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

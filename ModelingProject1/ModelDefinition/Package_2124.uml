@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="fe73835b-1b74-4024-afbe-b2fa07caddf8"
+  name="Simulation"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="208a7006-94cc-4366-846c-45d5fda20d16"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSimulation"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0227d94b-fa45-42fc-af77-44bf2a247b70"
+        name="Simulation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a1f1d15d-415d-4361-8336-6827f1b0b479"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0248a315-4feb-4e7a-9d57-40d2e245391b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab2fe17f-e940-4a05-ae59-4afd09b6ae93">
+                <propertyInstance
+                  Id="915dec72-c0da-4ac0-ae61-dab8ec7e65b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7852d610-bf77-4e00-a697-79f454bcc3da">
+                <propertyInstance
+                  Id="91ab7496-40f9-4fa5-8128-187504b95f64"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="672f670e-fcbd-4f29-834b-631f448496e5">
+                <propertyInstance
+                  Id="6494697f-fcc9-4549-867f-aacbaa235e61"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4de8a260-07fc-4f02-95e7-7d703e57dbb1">
+                <propertyInstance
+                  Id="7d61e0bc-5be2-4df4-99f5-1b4fbfe203ac"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b09c6656-7916-491a-92d0-1e0b6e3fcd1c">
+                <propertyInstance
+                  Id="b9657a45-4e78-4972-bbaa-3a880685362d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8a14b048-bb66-4f45-8950-9344385b8160"
+            name="simulate"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bbca5d8f-ea7a-4cec-8970-27a9e9ec8f10"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3Dsimulate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0d0f035a-f9f0-4b91-8711-f7c7d959e566"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2b1ff21-a84c-46e6-b85c-935672d141bd">
+                    <propertyInstance
+                      Id="78ee06bf-65e3-4a3b-9c20-9702268c30f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f498052f-84a4-44ae-84ec-0ff542c70f4a">
+                    <propertyInstance
+                      Id="d3d3a765-9169-46e9-b726-8780be1d6376"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2241106-7e06-4cdd-b0fb-c5007993d28b">
+                    <propertyInstance
+                      Id="d5b979b2-4cab-4cda-857a-2a761e728ab5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc3cd03e-9416-47b9-95ce-217752061899">
+                    <propertyInstance
+                      Id="7e90f6a2-9673-4d05-aa53-cf49157c3f75"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9a95125-3e5b-4e60-838b-03903d4b0f64">
+                    <propertyInstance
+                      Id="91fc5e32-9ff0-4e8f-b13d-c19b7144d8b9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8059dd6d-7177-4fc2-99e7-d8511a57bcc5">
+                    <propertyInstance
+                      Id="27600b2b-40fa-4956-90a2-d1965514e7a1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="71c9703a-0e6b-43cd-8a8a-3e959fac76af"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6b42c043-dc7a-4ea0-ac03-9bb4e4e374e8"
+                      LastKnownName="SimulationResult"
+                      LastKnownLocation="Package_2124.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="67a5fff2-1cd8-4b39-9f75-b551361122ba"
+            name="checkForNotReadyProjects"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="47618d2d-f072-4df5-b193-d6db359e7f48"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DcheckForNotReadyProjects OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DProject)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19dda8cf-54b9-4d35-b6de-6b75ec29011b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c30c529-33d2-47bd-bf51-0c6542b99970">
+                    <propertyInstance
+                      Id="5f68f4fa-bff2-4911-b2e7-34a664e79b67"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="881d7da8-2dce-454b-b38b-7272846ceb9b">
+                    <propertyInstance
+                      Id="c6691a2f-1753-4879-bad5-4d4908af5ffd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3988a3f4-fbd0-477e-b2d3-a535f3ad8d0c">
+                    <propertyInstance
+                      Id="b97e9a24-6b70-49fe-bc64-48d1c2c025a0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="882b8f5d-6f8b-4b5a-bf53-256f7d3603af">
+                    <propertyInstance
+                      Id="b7de8057-4141-4c34-8e6e-a474bff93638"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fde8949-2448-4885-8de5-26ed48725327">
+                    <propertyInstance
+                      Id="9e81ddc1-5ad5-4feb-a5e1-cff889275616"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca587504-5165-4863-9eef-2215df07b731">
+                    <propertyInstance
+                      Id="c674a45e-133d-443e-bf13-f061e23776f2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="41b5c800-5782-440f-9128-6b4bb258c0e9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="64a9a047-7c58-454d-b443-b0659b21df36"
+                  name="projects"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b1cea48f-e25f-46ae-ace1-32ec92ee4a41"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DcheckForNotReadyProjects OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DProject)]))]) ParameterIdentifier%3Dprojects"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="bfa0821a-bc7d-4bca-8d95-29bbccce9911"
+                      LastKnownName="ICollection&lt;Project‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3a3b891d-d4d7-47f0-8285-fdb4102268f6"
+            name="getSchemaStart"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="38583072-4876-4243-a65b-2fd64d7ca18b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DgetSchemaStart OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a251ad11-8768-47a6-a9b8-d5678cea906c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22efa252-af53-4e12-bd54-8ce7815ff72b">
+                    <propertyInstance
+                      Id="31df90cd-96ad-441d-9ee9-e399306b0df9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ce17aec-78d6-4f19-93de-f0dcf987956d">
+                    <propertyInstance
+                      Id="416a4c6c-7a1d-4152-93db-2b149bb49d07"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abf41ccd-9158-4a4d-9d2e-c3e0a4baaa14">
+                    <propertyInstance
+                      Id="7d06bda5-946c-40bb-89ea-860f8a6bfccb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c07230b6-48bd-4f68-a664-aff659546bc6">
+                    <propertyInstance
+                      Id="10da8e43-fa07-4620-9e22-0a6fd35500f9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0a8657a-eef5-4181-8812-7542a6f91cbc">
+                    <propertyInstance
+                      Id="b2e8a38c-4cca-490f-a355-69c1d0fe89b3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f56da164-2d54-42e6-b5a4-4a1b8a0cd776">
+                    <propertyInstance
+                      Id="da740879-b62c-4f9c-b707-f960ad447b24"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc8d9c8e-f9fe-49e1-8eee-b64f3b77fb2a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="067dbe93-83ca-4479-b8ed-46a9f3cf0922"
+                  name="entities"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="42a0da43-fc80-46a3-8760-8a3cd6c9e0f1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DgetSchemaStart OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]))]) ParameterIdentifier%3Dentities"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="728bbfce-86a9-4255-abf5-8541b00a34e1"
+                      LastKnownName="ICollection&lt;Entity‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="82eb004d-c9c0-45e1-8b7a-05e5ec761f1b"
+            name="getSchemaDestenation"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="15e47632-beec-4cef-ae4d-d460c678bbd2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DgetSchemaDestenation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="51011487-8842-4d52-ad13-2773480c62ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a14503dd-b46a-4612-a80d-faafa68d9860">
+                    <propertyInstance
+                      Id="0584e966-756e-4c8c-b6b3-bae5ef839075"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="966c7441-e584-4cbd-a6f1-3e22d764537e">
+                    <propertyInstance
+                      Id="ff9b8d9c-74da-4c6a-81fe-a23e691f44b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9870f8a-e831-4445-84c3-f656faa923cc">
+                    <propertyInstance
+                      Id="e1cbc0d9-46ca-4c50-a0a5-a6548e58268e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8abe030e-0974-41d0-92e3-c2d4306fd41c">
+                    <propertyInstance
+                      Id="fb421c44-ca6d-4430-8a32-a2d036f2c943"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cc88804-6c90-432e-8534-9717b2b9de99">
+                    <propertyInstance
+                      Id="24bf0083-0ea3-4831-b665-1b3f7d024391"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d76c693-b110-488a-9987-6c009e72663e">
+                    <propertyInstance
+                      Id="c3c9562a-586d-49fd-a387-6e989bcc61d7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e44ab29e-b38e-4228-88cf-7c63bc281c46"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="72ff3d28-47d6-4756-b85f-52aa9a0343da"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_1444.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="94eab497-b867-4416-bdc8-40d44fda1093"
+                  name="entities"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a31d407f-b5cf-455d-94ed-e80bf965ad3e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D(Name%3DgetSchemaDestenation OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DICollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FEntity%2Fbin%2FDebug%2FEntity.dll Namespace%3DEntities Type%3DEntity)]))]) ParameterIdentifier%3Dentities"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="728bbfce-86a9-4255-abf5-8541b00a34e1"
+                      LastKnownName="ICollection&lt;Entity‎&gt;"
+                      LastKnownLocation="Package5_0921.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="27e68464-b382-41e5-b598-dcca216b7890"
+            name="Simulation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2542e1f3-6bf1-4af1-a301-edd3b21973bb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulation Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="083549ea-643b-45e4-a140-52242f53df7e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3da2f34f-652e-480b-a3e2-1cee86f1aaf0">
+                    <propertyInstance
+                      Id="36d7cfa2-59c8-4735-aad0-9a4230c68150"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b69f9938-b9b5-4dcc-bf9b-5ddb500c3365">
+                    <propertyInstance
+                      Id="bfd3b505-0890-4ee6-bd05-c722ba27b165"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d780106-268e-45a4-a2f2-561067de290e">
+                    <propertyInstance
+                      Id="ad77761f-faef-44cf-b7fe-f8ba7f0ab017"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac868141-be4b-4c42-8b42-e35b43a886d0">
+                    <propertyInstance
+                      Id="245df4d3-7d84-42ee-a51d-d2465002bc71"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e2f4f86-2277-4940-b6d0-c4bb720d4beb">
+                    <propertyInstance
+                      Id="49841901-3042-487a-a672-7812a2aeca38"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0722ae6a-0df8-4e9a-bf5b-b0e25f466712">
+                    <propertyInstance
+                      Id="fa8a10c6-272a-4742-9ee8-c87cb538133b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b42c043-dc7a-4ea0-ac03-9bb4e4e374e8"
+        name="SimulationResult"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="affaabff-b09e-4870-893f-b3014a91636c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulationResult"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2a5a1f2c-74ac-4a34-8aaf-d04b462061e3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6eee9cc-3142-4975-9398-f60fbd2bbe91">
+                <propertyInstance
+                  Id="3cabeb35-7ac4-4555-8759-ec8dd8cc4cbb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="87d43e0e-9d5d-4dfa-a000-1e97bd5fc3b5">
+                <propertyInstance
+                  Id="1772f2ea-44b1-4229-85cc-51a7d94e03eb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d51e6a0b-3d55-4bb8-aa15-e65fc8a0f5b2">
+                <propertyInstance
+                  Id="080be3e2-8136-4f17-8110-a38bc55a10db"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e64b17f7-69bf-4bd3-abf6-71302efebe72">
+                <propertyInstance
+                  Id="0d130719-87b3-41d3-a5c9-eb016b0fc10a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2fb7a28f-a484-4ed3-923e-5f68b9d8b941">
+                <propertyInstance
+                  Id="0e6f2abf-d6f5-42b8-8f9b-4d1997e98b0d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="830e9010-6927-4d33-a372-9954eed34eb5"
+            isDerived="false"
+            sourceEndRoleName="SimulationResult"
+            targetEndRoleName="state"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="9b012c0e-30fc-412f-9c7c-c1411bf19ee3"
+              LastKnownName="ProcessingState"
+              LastKnownLocation="Package_1444.uml" />
+            <description>Property state references type ProcessingState.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a63a4148-f18f-47e6-9258-82f69ea5f3fc"
+                  name="SimulationResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="45c49921-4ab0-4b5a-b6ed-37aa80294774"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9c3e5557-b77c-4ba0-9bca-8d0a9c0b39ef"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea81fcec-c7b5-489a-a3a6-c24158ad93d6"
+                  name="state"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c64d8b53-a390-41a1-a069-a7f2d149a68c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="181b9624-3f7f-455c-b551-ff7a84ff33bd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4bcadb4f-1dd8-44d6-8cc2-0ffe74abeb17"
+            isDerived="false"
+            sourceEndRoleName="SimulationResult"
+            targetEndRoleName="simulationTime"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="82386d72-e7b7-4169-bf7e-0cde00993d7f"
+              LastKnownName="Double"
+              LastKnownLocation="Package_0921.uml" />
+            <description>Property simulationTime references type Double.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c83c42ca-da64-4934-8adf-d20637dadc2c"
+                  name="SimulationResult"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="20470468-3c74-43ee-856a-b5e345243c6b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b78a1970-5f4c-46fd-87cc-ac2dfe4a214c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ea7abcdb-45da-4799-8ba7-185004529e01"
+                  name="simulationTime"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="86e96f52-8e68-4809-bab0-f7077ebbdfcd"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ef02e2a1-a16d-4e8b-9c1f-20398b02324a"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5a50ade6-108a-4152-a899-1418f7a30334"
+            name="state"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f24f2631-9805-43ad-866f-d52a941b69ea"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulationResult Member%3Dstate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b927d15-4e27-4931-b282-1ba64c970d4e"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b236afe-0e9a-4d79-b0b4-797642f4b2b1">
+                    <propertyInstance
+                      Id="916d0d07-5700-46d9-b54d-1bb88b56ef09"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b14331e-0333-4707-85cf-c7e565154a30">
+                    <propertyInstance
+                      Id="c17fc95b-1373-46d1-8ce6-5e348321496d"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="751bf5e6-6fa5-4d6c-aae9-7dc41f775e71">
+                    <propertyInstance
+                      Id="fcd5ff64-19dd-4a8b-b3c1-31503395469c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="819895a4-df93-4bde-a212-041a4272848c">
+                    <propertyInstance
+                      Id="79d25e0b-7dcb-44da-95fe-814b36ab3d0b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1ca76c0-e4ad-4763-b168-f2c6dfb8d81e">
+                    <propertyInstance
+                      Id="2d2d1d51-3e2d-4f0a-86bc-84a27ba0e7a8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="475b12e5-e90c-4f86-bd62-86b26dc535fd">
+                    <propertyInstance
+                      Id="7b97b39e-a3ed-45ad-9cdc-839eb65dd34c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ee13f96-8e34-42b6-802b-2237597a1718">
+                    <propertyInstance
+                      Id="8893be97-6230-4eae-9019-a8576befe683"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="9b012c0e-30fc-412f-9c7c-c1411bf19ee3"
+                LastKnownName="ProcessingState"
+                LastKnownLocation="Package_1444.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0ab288a0-6e2c-4439-ac10-1782d3fbecc3"
+            name="simulationTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3746b70c-5a54-40df-8860-105f4a512b5c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulationResult Member%3DsimulationTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="482d46ee-02b7-4ef4-b8bf-064139c2371a"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f6057b89-99fd-40d5-8d9a-f5c9d9c5c4d8">
+                    <propertyInstance
+                      Id="ffe6cff0-d38c-48a2-838e-3ca3ea4dfe6f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b43d3bc-9495-46d2-843a-eff293f0f1e4">
+                    <propertyInstance
+                      Id="a946a7f8-75ec-485c-ad80-46ca1b38e544"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fdd4c4f-0c52-42c6-9f03-0359fe38f9df">
+                    <propertyInstance
+                      Id="3cf9c908-21d9-4a7b-9bb5-e080044c3d17"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ac0fc1c-a6ca-4774-b3fd-c9b464387a21">
+                    <propertyInstance
+                      Id="48ed1cef-0119-4663-8325-60ebc64d7834"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d9976ad-47ac-4970-ac17-08e23368a64f">
+                    <propertyInstance
+                      Id="b0c018c5-3271-4534-bbff-f9bbb7689d13"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb62167f-b10c-4257-997b-4143a979bafb">
+                    <propertyInstance
+                      Id="39abc3f1-9785-4081-a11f-c79829fadeb7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0163dbc1-c8e3-4481-bb0a-0add4bd6c5b4">
+                    <propertyInstance
+                      Id="895363f0-aee9-4956-a99a-278eb48eeec0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="82386d72-e7b7-4169-bf7e-0cde00993d7f"
+                LastKnownName="Double"
+                LastKnownLocation="Package_0921.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="72522692-afca-4c54-8a16-fd5079f07cb4"
+            name="SimulationResult"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c77e1f37-eee0-4358-9716-6f2fe619811c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2FSimulation%2Fbin%2FDebug%2FSimulation.dll Namespace%3DSimulation Type%3DSimulationResult Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="91c84673-9067-4f55-98ba-dd265289e177"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e050493b-f758-4a01-a1e1-eda3b05d2c98">
+                    <propertyInstance
+                      Id="56996d06-8ee8-4c85-9e6c-499f29ce99bc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b607c16-3a7d-4d0d-a410-193ba260a573">
+                    <propertyInstance
+                      Id="d8b5284b-5ecb-4126-910a-62e638de72f4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="457dd8d1-05bd-4914-a44e-7c22d7385c44">
+                    <propertyInstance
+                      Id="23599f1a-bc30-443a-9dcf-10851680c015"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9648916-1012-4ab7-a032-5018382748df">
+                    <propertyInstance
+                      Id="657da8f8-65d1-4934-a126-295e884b8b45"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff31a33a-ec87-4721-bd83-d39042cdf200">
+                    <propertyInstance
+                      Id="42da42f9-9f14-4faf-9100-f6f2d5c1f0af"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09cc4914-e32c-4881-adad-330016c4b1f6">
+                    <propertyInstance
+                      Id="f0657625-dd59-4769-b889-bce3e0dc3ebe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

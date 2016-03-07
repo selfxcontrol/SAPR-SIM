@@ -1,0 +1,26 @@
+﻿<Window x:Class="sapr_sim.ParameterDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Параметры блока" Height="450" Width="630" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="Resources/Res.ico">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" CornerRadius="2" BorderBrush="Gray" Background="LightGray" BorderThickness="2">
+            <StackPanel Orientation="Horizontal">
+                <Image Height="50" Width="50" Name="image" Margin="0, 0, 2, 2"/>
+                <TextBlock Name="description" MinWidth="500" MaxWidth="530" Margin="0, 0, 0, 2" TextWrapping="WrapWithOverflow"/>
+            </StackPanel>
+        </Border>
+        <StackPanel Grid.Row="1" Name="sp"/>
+        <WrapPanel Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right"  Margin="0,15,0,0">
+            <Button IsDefault="True" x:Name="btnDialogOk" Click="btnDialogOk_Click" MinWidth="60" MinHeight="20" Margin="0,0,10,0" Content="Применить"/>
+            <Button IsCancel="True" MinWidth="60" Content="Отмена"/>
+        </WrapPanel>
+    </Grid>
+
+</Window>

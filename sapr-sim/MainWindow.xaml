@@ -1,0 +1,272 @@
+﻿<Window x:Class="sapr_sim.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:sapr_sim="clr-namespace:sapr_sim.WPFCustomElements;assembly="
+        Title="SAPR-SIM v. 0.7.1" Height="768" Width="1024" MinHeight="768" MinWidth="1024" WindowState="Maximized" Icon="Resources/Icon_PlaySolid.ico" Closing="Application_ClosingEvent">
+
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition x:Name="BottomSplitterColumn" Height="5" />
+            <RowDefinition x:Name="BottomColumn" Height="150" MaxHeight="150"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Новый">
+                    <MenuItem Header="Проект" Click="CreateNewProject_Click"/>
+                    <MenuItem Name="newDiagramButton" Header="Процесс" InputGestureText="Ctrl+N" Click="CreateNewDiagram_Click"/>
+                </MenuItem>
+                <MenuItem Header="Открыть">
+                    <MenuItem Header="Проект" Click="OpenProject_Click"/>
+                    <MenuItem Name="openDiagramButton" Header="Процесс" InputGestureText="Ctrl+O" Click="Open_Click"/>
+                </MenuItem>
+                <MenuItem Name="closeProjectButton"  Header="Закрыть проект" Click="CloseProject_Click"/>
+                <Separator/>
+                <MenuItem Name="saveButton" Header="Сохранить" InputGestureText="Ctrl+S" Click="Save_Click"/>
+                <MenuItem Name="saveAsButton" Header="Сохранить как..." Click="SaveAs_Click"/>
+                <MenuItem Name="saveAllButton" Header="Сохранить все" InputGestureText="Ctrl+Shift+S" Click="SaveAll_Click"/>
+                <Separator/>
+                <MenuItem Header="Экспорт" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Name="editMenuItem" Header="Правка">
+                <MenuItem Header="Отменить действие" InputGestureText="Ctrl+Z" IsEnabled="False"/>
+                <MenuItem Header="Вернуть действие" InputGestureText="Ctrl+Y" IsEnabled="False"/>
+                <Separator/>
+                <MenuItem Name="cutButton" Header="Вырезать" InputGestureText="Ctrl+X" Click="Cut_Click"/>
+                <MenuItem Name="copyButton" Header="Копировать" InputGestureText="Ctrl+C" Click="Copy_Click"/>
+                <MenuItem Name="pasteButton" Header="Вставить" InputGestureText="Ctrl+V" Click="Paste_Click"/>
+                <Separator/>
+                <MenuItem Name="deleteButton" Header="Удалить" InputGestureText="Del" Click="Delete_Click"/>
+                <MenuItem Header="Выделить все" InputGestureText="Ctrl+A" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Name="instrumentMenuItem" Header="Инструменты">
+                <MenuItem Header="Указатель" InputGestureText="A" Click="ArrowButton_Click"/>
+                <MenuItem Header="Надпись" InputGestureText="T" Click="LabelButton_Click"/>
+                <Separator/>
+                <MenuItem Header="Процедура" InputGestureText="P" Click="ProcedureButton_Click"/>
+                <MenuItem Header="Ресурс" InputGestureText="R" Click="ResourceButton_Click"/>
+                <MenuItem Header="Решение" Click="DecisionButton_Click" IsEnabled="False"/>
+                <MenuItem Header="Коллектор" Click="CollectorButton_Click" IsEnabled="False"/>
+                <MenuItem Header="Синхронизация" Click="SyncButton_Click"/>
+                <MenuItem Header="Параллельность" Click="ParallelButton_Click"/>
+                <MenuItem Header="Сток" Click="EntitySourceButton_Click"/>
+                <MenuItem Header="Исток" Click="EntityDestinationButton_Click"/>
+                <Separator/>
+                <MenuItem Header="Прямая линия" Click="LineButton_Click"/>
+                <MenuItem Header="Линия с изломом" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Name="formatMenuItem" Header="Формат">
+                <MenuItem Header="Выровнять">
+                    <MenuItem Header="По левому краю" IsEnabled="False"/>
+                    <MenuItem Header="По центру по горизонтали" IsEnabled="False"/>
+                    <MenuItem Header="По правому краю" IsEnabled="False"/>
+                    <Separator/>
+                    <MenuItem Header="По верхнему краю" IsEnabled="False"/>
+                    <MenuItem Header="По центру по вертикали" IsEnabled="False"/>
+                    <MenuItem Header="По нижнему краю" IsEnabled="False"/>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Name="projectMenuItem" Header="Проект">
+                <MenuItem Name="runSimulationButton" Header="Запуск моделирования" InputGestureText="F5" Click="SimulateButton_Click"/>
+                <MenuItem Header="Запуск оптимизации" InputGestureText="F6" IsEnabled="False"/>
+                <Separator/>
+                <MenuItem Name="projectSettingsButton" Header="Настройки проекта" Click="ProjectSettings_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <ToolBarPanel Grid.Row="1">
+            <ToolBar Name="toolBar" Height="26" >
+                <Button x:Name="NewDiagram" ToolTip="Создать новый процесс" Click="CreateNewDiagram_Click">
+                    <Image Source="Resources/New_document.png" />
+                </Button>
+                <Button x:Name="OpenDiagram" ToolTip="Открыть процесс" Click="Open_Click">
+                    <Image Source="Resources/Folder.png" />
+                </Button>
+                <Button x:Name="SaveDiagram" ToolTip="Сохранить" Click="Save_Click">
+                    <Image Source="Resources/Save.png" />
+                </Button>
+                <Button x:Name="Export" ToolTip="Экспорт в качестве изображения" IsEnabled="False">
+                    <Image Source="Resources/Export.png" />
+                </Button>
+                <Separator/>
+
+                <Button x:Name="Cut" ToolTip="Вырезать" Click="Cut_Click">
+                    <Image Source="Resources/Cut.png" />
+                </Button>
+                <Button x:Name="Copy" ToolTip="Копировать" Click="Copy_Click">
+                    <Image Source="Resources/page_copy.png" />
+                </Button>
+                <Button x:Name="Paste" ToolTip="Вставить" Click="Paste_Click">
+                    <Image Source="Resources/page_paste.png" />
+                </Button>
+                <Separator/>
+
+                <Button x:Name="Undo" ToolTip="Отменить последнее действие" IsEnabled="False">
+                    <Image Source="Resources/arrow-undo.png" />
+                </Button>
+                <Button x:Name="Redo" ToolTip="Вернуть последнее действие" IsEnabled="False">
+                    <Image Source="Resources/arrow-redo.png" />
+                </Button>
+                <Separator/>
+
+                <Button x:Name="LeftBtn" ToolTip="Выравнять по левому краю" Click="LeftSideAlignment_Click" IsEnabled="True">
+                    <Image Source="Resources/align_left.png" />
+                </Button>
+                <Button x:Name="Center" ToolTip="Выравнять по центру" IsEnabled="False">
+                    <Image Source="Resources/align_center.png" />
+                </Button>
+                <Button x:Name="Right" ToolTip="Выравнять по правому краю" IsEnabled="False">
+                    <Image Source="Resources/align_right.png" />
+                </Button>
+                <Separator/>
+
+                <Button x:Name="TopBtn" ToolTip="Выравнять по верхнему краю" IsEnabled="False">
+                    <Image Source="Resources/align_top.png" />
+                </Button>
+                <Button x:Name="Middle" ToolTip="Выравнять по центру" IsEnabled="False">
+                    <Image Source="Resources/align_middle.png" />
+                </Button>
+                <Button x:Name="Bottom" ToolTip="Выравнять по нижнему краю" IsEnabled="False">
+                    <Image Source="Resources/align_bottom.png" />
+                </Button>
+                <Separator/>
+
+                <Button x:Name="runSimulationToolButton" ToolTip="Запустить моделирование" Click="SimulateButton_Click">
+                    <Image Source="Resources/Icon_PlaySolid.ico" />
+                </Button>
+            </ToolBar>
+        </ToolBarPanel>
+
+        <DockPanel Grid.Row="2" FocusManager.IsFocusScope="True">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition x:Name="LeftColumn" Width="250" MinWidth="250"/>
+                    <ColumnDefinition Width="0" x:Name="LeftSplitterColumn"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+                <Grid Visibility="{Binding GridVisibility}" DockPanel.Dock="Left" MinWidth="100">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Border Grid.Column="0" Background="White" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Row="0" Background="Transparent" BorderBrush="Black" BorderThickness="1">
+                                <TabControl>
+                                    <TabItem Header="Структура проекта">
+                                        <TreeView Name="projectStructure" ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+                                               ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="0,0,-10,0"/>
+                                    </TabItem>
+                                </TabControl>
+                            </Border>
+
+                            <Border Grid.Row="2" Background="White" BorderBrush="Black" BorderThickness="1">
+                                <TabControl>
+                                    <TabItem Header="Свойства">
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock VerticalAlignment="Center" TextWrapping="Wrap" IsEnabled="False">Свойства выделенного объекта в режиме чтения</TextBlock>
+                                            <GridSplitter Height="5" BorderBrush="Black" HorizontalAlignment="Stretch" />
+                                            <StackPanel Name="propertiesPanel"/>
+                                        </StackPanel>
+                                    </TabItem>
+                                </TabControl>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                </Grid>
+                <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" />
+                <Button x:Name="ToggleButton" Grid.Column="2"
+                        Content="↔"
+                        Click="ToggleButton_Click"/>
+
+                <Border Background="White" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Top" Grid.Column="3">
+                    <TabControl Name="tabs"/>
+                </Border>
+                <Border Grid.Column="4" Width="50" Background="White" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Right">
+                    <DockPanel Background="AliceBlue" VerticalAlignment="Top">
+                        <Grid Name="instrumentPanel" DockPanel.Dock="Bottom" Width="50" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <!--  Non-functional entities-->
+                            <Button Grid.Row="0" Content="{StaticResource Arrow}"  Click="ArrowButton_Click" ToolTip="Указатель"/>
+                            <Button Grid.Row="1" Content="{StaticResource Label}"  Click="LabelButton_Click" ToolTip="Надпись"/>
+
+                            <!--  Functional entities-->
+                            <Button Grid.Row="2" Content="{StaticResource Procedure}" Click="ProcedureButton_Click" ToolTip="Процедура"/>
+                            <Button Grid.Row="3" Content="{StaticResource Resource}" Click="ResourceButton_Click" ToolTip="Ресурс"/>
+                            <Button Grid.Row="4" Content="{StaticResource Multithread}" Click="ParallelButton_Click" ToolTip="Параллельность"/>
+                            <Button Grid.Row="5" Content="{StaticResource Sync}" Click="SyncButton_Click" ToolTip="Синхронизация"/>
+                            <Button Grid.Row="6" Content="{StaticResource If}" Click="DecisionButton_Click" ToolTip="Блок принятия решений" IsEnabled="False"/>
+                            <Button Grid.Row="7" Content="{StaticResource Collector}" Click="CollectorButton_Click" ToolTip="Коллектор" IsEnabled="False"/>
+                            <Button Grid.Row="8" Content="{StaticResource EntitySource}" Click="EntitySourceButton_Click" ToolTip="Старт" />
+                            <Button Grid.Row="9" Content="{StaticResource EntityDestination}" Click="EntityDestinationButton_Click" ToolTip="Конец"/>
+
+                            <!--  Lines-->
+                            <Button Grid.Row="10" Content="{StaticResource Line}" ToolTip="Линия" Click="LineButton_Click"/>
+                            <Button Grid.Row="11" Content="{StaticResource CurveLine}" ToolTip="Линия с изломом" IsEnabled="False"/>
+                        </Grid>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </DockPanel>
+
+        <Button x:Name="BottomToggleButton" Content="↕" Click="BottomToggleButton_Click" Grid.Row="3"/>
+        <GridSplitter Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+        <DockPanel Grid.Row="5">
+            <Grid Visibility="{Binding GridVisibilityBottom}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <TabControl>
+                    <TabItem Name="errorsTab" Header="Ошибки">
+                        <ListBox Name="errorsListBox" MouseDoubleClick="errorsListBox_MouseLeftButtonDown" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                    </TabItem>
+                    <TabItem Name="infoTab" Header="Информация">
+                        <ScrollViewer>
+                            <TextBlock Name="infoTextBlock"/>
+                        </ScrollViewer>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </DockPanel>
+    </Grid>
+    
+</Window>

@@ -1,0 +1,29 @@
+﻿<Application x:Class="sapr_sim.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!-- Non-functional entities-->
+            <Image x:Key="Arrow" Source="pack://application:,,,/Resources/arrow.png"/>
+            <Image x:Key="Border" Source="pack://application:,,,/Resources/Border.gif"/>
+            <Image x:Key="Label" Source="pack://application:,,,/Resources/Label.gif"/>
+
+            <!-- Functional entities -->
+            <Image x:Key="Procedure" Source="pack://application:,,,/Resources/Procedure.gif"/>
+            <Image x:Key="Resource" Source="pack://application:,,,/Resources/Resource.gif"/>
+            <Image x:Key="Sync" Source="pack://application:,,,/Resources/Sync.gif"/>
+            <Image x:Key="Multithread" Source="pack://application:,,,/Resources/Parallel.gif"/>
+            <Image x:Key="If" Source="pack://application:,,,/Resources/decision.gif"/>
+            <Image x:Key="Collector" Source="pack://application:,,,/Resources/Collector.gif"/>
+            <Image x:Key="EntitySource" Source="pack://application:,,,/Resources/Sink.gif"/>
+            <Image x:Key="EntityDestination" Source="pack://application:,,,/Resources/Source.gif"/>
+
+            <!-- Lines -->
+            <Image x:Key="Line" Source="Resources/line.gif"/>
+            <Image x:Key="CurveLine" Source="Resources/Curveline.gif"/>
+
+            <Image x:Key="Subprocess" Source="Resources/Subprocess.gif"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

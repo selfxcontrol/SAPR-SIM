@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2894706f-02b4-4c44-ba1e-d9cd9e66a581"
+  name="WPFCustomElements"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="26d83b72-d224-4a2b-8f9a-3d3bece10122"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3Dsapr_sim.WPFCustomElements"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7b3f60e8-5931-49c5-910d-f6ecc4534980"
+        name="ScrollableCanvas"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4987021c-d0fa-414f-af52-aa075bc6be04"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.WPFCustomElements Type%3DScrollableCanvas"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3514244a-899d-4ee2-b2fe-8738cfa46125"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c256a6a4-1af7-43df-8849-b2a71a875dc2">
+                <propertyInstance
+                  Id="55bdd141-7125-4f78-b000-e74d9e19bb0b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22262ecf-7cf5-48a9-9734-43704d58dd87">
+                <propertyInstance
+                  Id="36e87cc6-2642-4855-ac9a-7f223495c026"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="194716c9-8a3e-4c67-bd37-9dc3add14ef1">
+                <propertyInstance
+                  Id="6546680f-7838-47fd-ba84-f508bf4786fd"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf620a4b-eafd-4722-a65e-c0ba62137307">
+                <propertyInstance
+                  Id="40f960be-dd49-41bc-8eb7-504b0660d51c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88be0e1b-3eb9-4928-afce-ec33bcc48c2f">
+                <propertyInstance
+                  Id="007b3f6e-a320-4c27-90e7-127f6f6976aa"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0717dee2-b134-4e49-b458-9fe93cbc36ea"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f04629f0-a69e-46dd-8e16-6831e076b25a"
+              LastKnownName="Canvas"
+              LastKnownLocation="Package2_0921.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac73b647-3b88-44da-8f5b-1cfd3db0bb05"
+        name="ClosableTabItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3c5b35f7-5ce9-4e18-89e1-a679cbe0e330"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2FProjects%2Fsaprsim-development%2Fsapr-sim%2Fbin%2FDebug%2Fsapr-sim.exe Namespace%3Dsapr_sim.WPFCustomElements Type%3DClosableTabItem"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="af2ab295-94de-49e9-8aea-866aab02a4fa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="733d204b-c29a-4e83-bba2-0e6411b00830">
+                <propertyInstance
+                  Id="041fb787-f35a-4f85-9e66-c5945af68f5c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15924d1a-7bf8-4e76-adde-8671182e5da3">
+                <propertyInstance
+                  Id="57b97c20-709b-4317-a6da-5af223be88ba"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c4889b3f-a6df-437b-9415-ea7c4dafda0f">
+                <propertyInstance
+                  Id="ca234b55-38a0-41d9-be01-3281917a5249"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="539e8fa7-7bb5-4346-b9a2-caa7235ac61e">
+                <propertyInstance
+                  Id="65a4648c-c246-4805-9b07-bb8ea071db29"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7ee1d81b-e630-4289-9e79-e7c6f5f2dbff">
+                <propertyInstance
+                  Id="373c2bea-58a5-496e-92ee-bb8e2200b760"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b1176377-1102-400e-931b-80dbb948353a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c7c0e0aa-5f86-4f24-807c-eb92cea5b507"
+              LastKnownName="TabItem"
+              LastKnownLocation="Package2_0921.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
