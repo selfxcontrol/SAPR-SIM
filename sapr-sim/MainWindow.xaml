@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:System="clr-namespace:System;assembly=mscorlib"
         xmlns:sapr_sim="clr-namespace:sapr_sim.WPFCustomElements;assembly="
-        Title="SAPR-SIM v. 0.7.1" Height="768" Width="1024" MinHeight="768" MinWidth="1024" WindowState="Maximized" Icon="Resources/Icon_PlaySolid.ico" Closing="Application_ClosingEvent">
+        Title="SAPR-SIM v. 0.7.2" Height="768" Width="1024" MinHeight="768" MinWidth="1024" WindowState="Maximized" Icon="Resources/Icon_PlaySolid.ico" Closing="Application_ClosingEvent">
 
     <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
         <Grid.RowDefinitions>
@@ -49,11 +49,11 @@
                 <MenuItem Header="Выделить все" InputGestureText="Ctrl+A" IsEnabled="False"/>
             </MenuItem>
             <MenuItem Name="instrumentMenuItem" Header="Инструменты">
-                <MenuItem Header="Указатель" InputGestureText="A" Click="ArrowButton_Click"/>
-                <MenuItem Header="Надпись" InputGestureText="T" Click="LabelButton_Click"/>
+                <MenuItem Header="Указатель" InputGestureText="Alt+A" Click="ArrowButton_Click"/>
+                <MenuItem Header="Надпись" InputGestureText="Alt+S" Click="LabelButton_Click"/>
                 <Separator/>
-                <MenuItem Header="Процедура" InputGestureText="P" Click="ProcedureButton_Click"/>
-                <MenuItem Header="Ресурс" InputGestureText="R" Click="ResourceButton_Click"/>
+                <MenuItem Header="Процедура" InputGestureText="Alt+D" Click="ProcedureButton_Click"/>
+                <MenuItem Header="Ресурс" InputGestureText="Alt+F" Click="ResourceButton_Click"/>
                 <MenuItem Header="Решение" Click="DecisionButton_Click" IsEnabled="False"/>
                 <MenuItem Header="Коллектор" Click="CollectorButton_Click" IsEnabled="False"/>
                 <MenuItem Header="Синхронизация" Click="SyncButton_Click"/>
@@ -226,12 +226,12 @@
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
                             <!--  Non-functional entities-->
-                            <Button Grid.Row="0" Content="{StaticResource Arrow}"  Click="ArrowButton_Click" ToolTip="Указатель"/>
-                            <Button Grid.Row="1" Content="{StaticResource Label}"  Click="LabelButton_Click" ToolTip="Надпись"/>
+                            <Button Grid.Row="0" Content="{StaticResource Arrow}"  Click="ArrowButton_Click" ToolTip="Указатель (Alt+A)"/>
+                            <Button Grid.Row="1" Content="{StaticResource Label}"  Click="LabelButton_Click" ToolTip="Надпись (Alt+S)"/>
 
                             <!--  Functional entities-->
-                            <Button Grid.Row="2" Content="{StaticResource Procedure}" Click="ProcedureButton_Click" ToolTip="Процедура"/>
-                            <Button Grid.Row="3" Content="{StaticResource Resource}" Click="ResourceButton_Click" ToolTip="Ресурс"/>
+                            <Button Grid.Row="2" Content="{StaticResource Procedure}" Click="ProcedureButton_Click" ToolTip="Процедура (Alt+D)"/>
+                            <Button Grid.Row="3" Content="{StaticResource Resource}" Click="ResourceButton_Click" ToolTip="Ресурс (Alt+F)"/>
                             <Button Grid.Row="4" Content="{StaticResource Multithread}" Click="ParallelButton_Click" ToolTip="Параллельность"/>
                             <Button Grid.Row="5" Content="{StaticResource Sync}" Click="SyncButton_Click" ToolTip="Синхронизация"/>
                             <Button Grid.Row="6" Content="{StaticResource If}" Click="DecisionButton_Click" ToolTip="Блок принятия решений" IsEnabled="False"/>

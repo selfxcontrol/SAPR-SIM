@@ -52,6 +52,25 @@ namespace sapr_sim
                 CommandBindings.Add(new CommandBinding(runSimulationBinding, RunSimulationCommand, Hotkeys_CanExecute));
 
                 // ****************************************************************************************************
+                // Instruments Commands
+                RoutedCommand addArrow = new RoutedCommand();
+                addArrow.InputGestures.Add(new KeyGesture(Key.A, ModifierKeys.Alt));
+                CommandBindings.Add(new CommandBinding(addArrow, ArrowButton, Hotkeys_CanExecute));
+
+                RoutedCommand addProcedure = new RoutedCommand();
+                addProcedure.InputGestures.Add(new KeyGesture(Key.D, ModifierKeys.Alt));
+                CommandBindings.Add(new CommandBinding(addProcedure, ProcedureButton, Hotkeys_CanExecute));
+
+                RoutedCommand addLabel = new RoutedCommand();
+                addLabel.InputGestures.Add(new KeyGesture(Key.S, ModifierKeys.Alt));
+                CommandBindings.Add(new CommandBinding(addLabel, LabelButton, Hotkeys_CanExecute));
+
+                RoutedCommand addResource = new RoutedCommand();
+                addResource.InputGestures.Add(new KeyGesture(Key.F, ModifierKeys.Alt));
+                CommandBindings.Add(new CommandBinding(addResource, ResourceButton, Hotkeys_CanExecute));
+
+            
+                // ****************************************************************************************************
                 // Other Commands
                 RoutedCommand closeTabBinding = new RoutedCommand();
                 closeTabBinding.InputGestures.Add(new KeyGesture(Key.W, ModifierKeys.Control));
@@ -153,6 +172,26 @@ namespace sapr_sim
         private void SaveAllCommand(object sender, ExecutedRoutedEventArgs e)
         {
             SaveAll_Click(null, null);
+        }
+
+        private void ArrowButton(object sender, ExecutedRoutedEventArgs e)
+        {
+            ArrowButton_Click(null, null);
+        }
+
+        private void ProcedureButton(object sender, ExecutedRoutedEventArgs e)
+        {
+            ProcedureButton_Click(null, null);
+        }
+
+        private void LabelButton(object sender, ExecutedRoutedEventArgs e)
+        {
+            LabelButton_Click(null, null);
+        }
+
+        private void ResourceButton(object sender, ExecutedRoutedEventArgs e)
+        {
+            ResourceButton_Click(null, null);
         }
 
         private void RunSimulationCommand(object sender, ExecutedRoutedEventArgs e)
