@@ -39,7 +39,8 @@ namespace sapr_sim
             InitializeComponent();
             this.canvas = pi.Canvas;
             this.controller = controller;
-            processName.Content = pi.Name;            
+            processName.Content = pi.Name;
+            showChart();
         }
 
         private void btnRun_Click(object sender, RoutedEventArgs e)
@@ -75,6 +76,27 @@ namespace sapr_sim
             resourceTab.ItemsSource = resourseStat;
 
             
+        }
+        private void showChart()
+        {
+            List<KeyValuePair<string, int>> MyValue = new List<KeyValuePair<string, int>>();
+            MyValue.Add(new KeyValuePair<string, int>("Инженер", 120));
+            MyValue.Add(new KeyValuePair<string, int>("Компьютер", 140));
+            MyValue.Add(new KeyValuePair<string, int>("Помошник инженера", 50));
+            MyValue.Add(new KeyValuePair<string, int>("Проектировщик", 20));
+            //MyValue.Add(new KeyValuePair<string, int>("Руководитель", 140));
+
+            List<KeyValuePair<string, int>> MyValue2 = new List<KeyValuePair<string, int>>();
+            MyValue2.Add(new KeyValuePair<string, int>("Сбор требований", 3));
+            MyValue2.Add(new KeyValuePair<string, int>("Задание параметров", 1));
+            MyValue2.Add(new KeyValuePair<string, int>("Оптимизация связей", 2));
+            MyValue2.Add(new KeyValuePair<string, int>("Разводка трасс", 1));
+
+
+            ColumnChart1.DataContext = MyValue2;
+            //AreaChart1.DataContext = MyValue2;
+            PieChart1.DataContext = MyValue;
+
         }
     }
 }
