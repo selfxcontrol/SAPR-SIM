@@ -19,12 +19,12 @@ namespace sapr_sim.Utils
 
         public static List<IConvertible> list()
         {
-            return new List<IConvertible>() { WORKER, INSTRUMENT, MATERIAL };
+            return new List<IConvertible>() { WORKER, INSTRUMENT };
         }
 
         public static List<string> nameList()
         {
-            return new List<string>() { WORKER.Name, INSTRUMENT.Name, MATERIAL.Name };
+            return new List<string>() { WORKER.Name, INSTRUMENT.Name };
         }
 
         public static ResourceType byOrder(int order)
@@ -35,8 +35,8 @@ namespace sapr_sim.Utils
                     return WORKER;
                 case 1:
                     return INSTRUMENT;
-                case 2:
-                    return MATERIAL;
+                //case 2:
+                  //  return MATERIAL;
                 default:
                     throw new Exception("WTF, dude!?");
             }
